@@ -28,12 +28,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    MixiModalViewController *modal = [[MixiModalViewController alloc]init];
+    modal.delegate = self;
+    [self presentViewController:modal animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)didPressCloseButton
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

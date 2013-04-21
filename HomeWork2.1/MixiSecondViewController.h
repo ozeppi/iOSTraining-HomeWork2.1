@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixiModalViewController.h"
 
-@interface MixiSecondViewController : UIViewController
+@interface MixiSecondViewController : UIViewController <MixiModalViewControllerDelegate>
 
 @end
